@@ -3,17 +3,18 @@
   "version": "1.0.0",
   "description": "solid na pratica",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+   "scripts": {
+    "tsc:init": "tsc --init",
+    "tsc:build": "tsc",
+    "main": "tsc && node dist/main.js",
+    "test": "tsc && jest dist/"
   },
   "author": "eliezer antonio",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^17.0.8",
     "typescript": "^4.5.4"
-  }
-  ,
-
+  },
   "dependencies": {
     "@types/jest": "^26.0.24",
     "jest": "^27.0.6"
