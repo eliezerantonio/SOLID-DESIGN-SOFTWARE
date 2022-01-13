@@ -19,18 +19,14 @@ export default class Order{
         for (const item of this.items) {
             total+=item.price;
         }
-
+ 
         return total;
     }
 
     getTaxes () {
          let taxes = 0;
         for (const item of this.items) {
-            if (item.category == "Cigar") {
-                taxes += item.price * 0.2;
-          }  if (item.category == "Beer") {
-                taxes += item.price * 0.1;
-          }
+            taxes += item.calculateTaxes();
         }
 
         return taxes; 
