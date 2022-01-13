@@ -36,4 +36,9 @@ export default class Order{
         return taxes; 
 
     }
+
+    getTotal () {
+        
+        return this.getSubtotal() + this.getTaxes();
+    }
 } 
