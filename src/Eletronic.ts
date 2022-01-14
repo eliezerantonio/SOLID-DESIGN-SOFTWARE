@@ -4,8 +4,8 @@ class Eletronic extends Item {
   constructor(description: string, price: number) {
     super("Eletronic", description, price);
   }
-  calculateTaxes(): number {
-    return this.price * 0.5;
+  getTaxes(): number {
+    return 0.5;
   }
 }
 
