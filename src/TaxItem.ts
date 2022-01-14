@@ -8,10 +8,10 @@ export default abstract class TaxItem extends Item {
 
     
     
-     calculateTaxes (): number{
+     calculateTaxes (date:Date): number{
        
-        return this.price*this.getTaxes();
+        return this.price*this.getTaxes(date);
     }
     
-    abstract getTaxes (): number
+    abstract getTaxes (date:Date): number
 }

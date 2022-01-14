@@ -5,7 +5,7 @@ class Eletronic extends TaxItem {
   constructor(description: string, price: number) {
     super("Eletronic", description, price);
   }
-  getTaxes(): number {
+  getTaxes(date:Date): number {
     return 0.5;
   }
 }

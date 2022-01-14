@@ -23,18 +23,18 @@ export default class Order {
     return total;
   }
 
-  getTaxes() {
+  getTaxes(date:Date) {
     let taxes = 0;
     for (const item of this.items) {
       if (item instanceof TaxItem) {
-        taxes += item.calculateTaxes();
+        taxes += item.calculateTaxes(date);
       }
     }
 
     return taxes;
   }
 
-  getTotal() {
-    return this.getSubtotal() + this.getTaxes();
+  getTotal(date: Date)  {
+    return this.getSubtotal() + this.getTaxes(date);
   }
 }

@@ -5,7 +5,7 @@ export default class Beer extends TaxItem{
     constructor(description: string, price: number) {
         super('Beer', description, price);
     }
-     getTaxes (): number {
+     getTaxes (date:Date): number {
          return  0.1;
     }
 }

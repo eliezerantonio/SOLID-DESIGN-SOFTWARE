@@ -5,8 +5,9 @@ class Cigar extends TaxItem {
   constructor(description: string, price: number) {
     super("Cigar", description, price);
   }
-  getTaxes(): number {
-    return  0.2;
+  getTaxes(date:Date): number {
+  
+    return 0.2;
   }
 }
 
