@@ -1,6 +1,7 @@
 import Item from "./Item";
+import TaxItem from "./TaxItem";
 
-class Eletronic extends Item {
+class Eletronic extends TaxItem {
   constructor(description: string, price: number) {
     super("Eletronic", description, price);
   }

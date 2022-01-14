@@ -1,6 +1,7 @@
 import Item from "./Item";
+import TaxItem from "./TaxItem";
 
-class Cigar extends Item {
+class Cigar extends TaxItem {
   constructor(description: string, price: number) {
     super("Cigar", description, price);
   }
