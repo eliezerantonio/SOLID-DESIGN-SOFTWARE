@@ -1,4 +1,4 @@
-import Item from "./Item";
+
 import TaxItem from "./TaxItem";
 
 class Cigar extends TaxItem {
