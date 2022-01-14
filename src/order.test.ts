@@ -34,3 +34,4 @@ test("Should calculate order total", function () {
   const total = order.getTotal();
   expect(total).toBe(19.5);
 });
+ 
